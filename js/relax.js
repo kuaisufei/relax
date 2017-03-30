@@ -15,7 +15,7 @@ var handlerfunc = {
 }	
 
 //数字处理
-var numberhandle = {
+var numberfunc = {
 	//数字转换成人民币汉字
 	numbertormb: function(currencyDigits) { 
 	// Constants:
