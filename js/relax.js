@@ -140,7 +140,17 @@ var numberfunc = {
 	    } 
 	    outputCharacters = outputCharacters; 
 	    return outputCharacters; 
-	} 
+	},
+	//生成两位小数，并增加千分位，
+	moneyFormat: function (num, back) {
+        if (num) {
+            return num.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+        }
+        if (back === 'null') {
+            return null;
+        }
+        return '0.00';
+    }
 }
 
 //弹框
